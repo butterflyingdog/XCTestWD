@@ -1,15 +1,13 @@
 # XCTestWD
 
 [![NPM version][npm-image]][npm-url]
-[![build status][travis-image]][travis-url]
 [![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
+[![CircleCI](https://circleci.com/gh/macacajs/XCTestWD.svg?style=svg)](https://circleci.com/gh/macacajs/XCTestWD)
 
 [npm-image]: https://img.shields.io/npm/v/xctestwd.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/xctestwd
-[travis-image]: https://img.shields.io/travis/macacajs/XCTestWD.svg?style=flat-square
-[travis-url]: https://travis-ci.org/macacajs/XCTestWD
-[node-image]: https://img.shields.io/badge/node.js-%3E=_6-green.svg?style=flat-square
+[node-image]: https://img.shields.io/badge/node.js-%3E=_8-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
 [download-image]: https://img.shields.io/npm/dm/xctestwd.svg?style=flat-square
 [download-url]: https://npmjs.org/package/xctestwd
@@ -35,7 +33,7 @@ Open the terminal, go to the directory where contains `XCTestWD.xcodeproj` file 
 
 ```bash
 #
-#Change the port number to override the default port 
+# Change the port number to override the default port 
 #
 $ xcodebuild -project XCTestWD.xcodeproj \
            -scheme XCTestWDUITests \
@@ -48,8 +46,8 @@ To execute for iOS device, run the following command:
 
 ```bash
 #
-#Change the port number to override the default port 
-#Specify the device name
+# Change the port number to override the default port 
+# Specify the device name
 #
 $ xcodebuild -project XCTestWD.xcodeproj \
            -scheme XCTestWDUITests \
@@ -102,13 +100,25 @@ cd "$(npm root -g)/macaca-ios/node_modules/xctestwd"
 
 Check carthage installation
 
+### 4.3 Debug info
+
+Now XCTestWD supports gathering debug log into log files which is stored in "Your-App-Sandbox-Root"/Documents/Logs dir. For real devices, you can connect to itunes and choose backup for `XCTestWDUITests` and get the debug log. For iOS simulators, the log file is in your computer's simulator app directory like:
+
+```
+"/Users/${user-name}/Library/Developer/CoreSimulator/Devices \
+/${device-id}/data/Containers/Data/Application/${app-id}/Documents/Logs"
+```
+
+You can use `xcrun simctl list` to get the id of the booted device.
+
 <!-- GITCONTRIBUTOR_START -->
 
 ## Contributors
 
-|[<img src="https://avatars1.githubusercontent.com/u/1011681?v=4" width="100px;"/><br/><sub><b>xudafeng</b></sub>](https://github.com/xudafeng)<br/>|[<img src="https://avatars0.githubusercontent.com/u/8198256?v=4" width="100px;"/><br/><sub><b>SamuelZhaoY</b></sub>](https://github.com/SamuelZhaoY)<br/>|[<img src="https://avatars1.githubusercontent.com/u/7436932?v=4" width="100px;"/><br/><sub><b>gurisxie</b></sub>](https://github.com/gurisxie)<br/>|[<img src="https://avatars1.githubusercontent.com/u/17233599?v=4" width="100px;"/><br/><sub><b>Chan-Chun</b></sub>](https://github.com/Chan-Chun)<br/>
-| :---: | :---: | :---: | :---: |
+|[<img src="https://avatars0.githubusercontent.com/u/8198256?v=4" width="100px;"/><br/><sub><b>SamuelZhaoY</b></sub>](https://github.com/SamuelZhaoY)<br/>|[<img src="https://avatars1.githubusercontent.com/u/1011681?v=4" width="100px;"/><br/><sub><b>xudafeng</b></sub>](https://github.com/xudafeng)<br/>|[<img src="https://avatars2.githubusercontent.com/u/10086769?v=4" width="100px;"/><br/><sub><b>holy-lousie</b></sub>](https://github.com/holy-lousie)<br/>|[<img src="https://avatars2.githubusercontent.com/u/9434109?v=4" width="100px;"/><br/><sub><b>adudurant</b></sub>](https://github.com/adudurant)<br/>|[<img src="https://avatars1.githubusercontent.com/u/17233599?v=4" width="100px;"/><br/><sub><b>Chan-Chun</b></sub>](https://github.com/Chan-Chun)<br/>|[<img src="https://avatars1.githubusercontent.com/u/7436932?v=4" width="100px;"/><br/><sub><b>gurisxie</b></sub>](https://github.com/gurisxie)<br/>
+| :---: | :---: | :---: | :---: | :---: | :---: |
 
-This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor.git), auto upated at `Sun Mar 25 2018 15:25:37 GMT+0800`.
+
+This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto upated at `Sat Apr 21 2018 12:04:14 GMT+0800`.
 
 <!-- GITCONTRIBUTOR_END -->
