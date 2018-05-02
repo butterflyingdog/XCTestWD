@@ -408,8 +408,8 @@ extension XCElementSnapshot {
     
     func wdRect() -> [String:CGFloat] {
         return [
-            "x":self.frame.minX,
-            "y":self.frame.minY,
+            "x":self.frame.minX != CGFloat.infinity ? self.frame.minX : 9999999999,
+            "y":self.frame.minY != CGFloat.infinity ? self.frame.minY : 9999999999,
             "width":self.frame.width,
             "height":self.frame.height]
     }
@@ -417,6 +417,10 @@ extension XCElementSnapshot {
     func isHittable() -> Bool {
         //check whether self is the current hitelement
         let midPoint:CGPoint = ((self.suggestedHitpoints as! NSArray).lastObject as! NSValue).cgPointValue;
+        if(midPoint.x == CGFloat.infinity || midPoint.y == CGFloat.infinity){
+            return false;
+        }
+        
         let hitElement1 = self.hitTest(midPoint) ;//as? XCElementSnapshot)! ;
         if( hitElement1 is XCElementSnapshot){
             let hitElement = hitElement1 as! XCElementSnapshot;
