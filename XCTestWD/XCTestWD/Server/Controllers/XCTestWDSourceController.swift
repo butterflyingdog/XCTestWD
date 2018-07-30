@@ -26,10 +26,11 @@ internal class XCTestWDSourceController: Controller {
     
     //MARK: Routing Logic Specification
     internal static func source(request: Swifter.HttpRequest) -> Swifter.HttpResponse {
-        let _ = request.session?.application.query()
-        request.session?.application.resolve()
-        let temp = request.session?.application.tree()
-        return XCTestWDResponse.response(session: request.session, value: JSON(JSON(temp!).rawString() ?? ""))
+        let _application   = request.session?.application;
+        let _ = _application?.query();
+        _application?.resolve();
+        let temp = _application?.tree();
+        return XCTestWDResponse.response(session: request.session, value: JSON(JSON(temp).rawString() ?? ""))
     }
     
     internal static func sourceWithoutSession(request: Swifter.HttpRequest) -> Swifter.HttpResponse {
