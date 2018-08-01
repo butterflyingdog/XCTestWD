@@ -430,10 +430,10 @@ extension XCElementSnapshot {
         }
         
         // check whether hitPoint is in  current visible frame
-        let fb_hitPoint:CGPoint = self.hitPoint ;
-        if ( self.visibleFrame.contains(  fb_hitPoint) ) {
-            return true;
-        }
+        //let fb_hitPoint:CGPoint = self.hitPoint ;
+        //if ( self.visibleFrame.contains(  fb_hitPoint) ) {
+        //    return true;
+        //}
         
         // get the children's hittable properties
         for ele  in self.children  {
