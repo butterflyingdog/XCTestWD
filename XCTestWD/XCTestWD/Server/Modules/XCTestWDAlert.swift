@@ -37,7 +37,7 @@ internal class XCTestWDAlert {
     internal func accept() -> Bool {
         
         let alertElement = self.alertElement()
-        let buttons = self.alertElement()?.descendants(matching: XCUIElement.ElementType.button).allElementsBoundByIndex
+        let buttons = alertElement?.descendants(matching: XCUIElement.ElementType.button).allElementsBoundByIndex
         var defaultButton:XCUIElement?
         
         if alertElement?.elementType == XCUIElement.ElementType.alert {
