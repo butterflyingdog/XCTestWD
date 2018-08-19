@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		4D92A7E321295003000ED767 /* XCTestWDRemoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D92A7E221295003000ED767 /* XCTestWDRemoteController.swift */; };
 		56215930209E98660043B404 /* XCTestWDScreenShotControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5621592F209E98660043B404 /* XCTestWDScreenShotControllerTest.swift */; };
 		56215932209E9A250043B404 /* XCTestWDSourceControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56215931209E9A250043B404 /* XCTestWDSourceControllerTests.swift */; };
 		56234E8620720D95008B8875 /* XCTestWDWindowControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56234E8520720D95008B8875 /* XCTestWDWindowControllerTests.swift */; };
@@ -168,6 +169,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4D92A7E221295003000ED767 /* XCTestWDRemoteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestWDRemoteController.swift; sourceTree = "<group>"; };
 		5621592F209E98660043B404 /* XCTestWDScreenShotControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestWDScreenShotControllerTest.swift; sourceTree = "<group>"; };
 		56215931209E9A250043B404 /* XCTestWDSourceControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestWDSourceControllerTests.swift; sourceTree = "<group>"; };
 		56234E8520720D95008B8875 /* XCTestWDWindowControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestWDWindowControllerTests.swift; sourceTree = "<group>"; };
@@ -439,6 +441,7 @@
 		7F8D62A7203E584F00D92323 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4D92A7E221295003000ED767 /* XCTestWDRemoteController.swift */,
 				7F5D3610203C47C800BCC922 /* XCTestWDAlertController.swift */,
 				7F5D360C203C47C800BCC922 /* XCTestWDElementController.swift */,
 				7F5D360F203C47C800BCC922 /* XCTestWDScreenshotController.swift */,
@@ -698,6 +701,7 @@
 				7F8D62C2203E59B400D92323 /* XCTestWDServer.swift in Sources */,
 				7F8D62C4203E59B400D92323 /* XCTestWDAlertController.swift in Sources */,
 				7F8D62C6203E59B400D92323 /* XCTestWDElementController.swift in Sources */,
+				4D92A7E321295003000ED767 /* XCTestWDRemoteController.swift in Sources */,
 				7F8D62C9203E59B400D92323 /* XCTestWDScreenshotController.swift in Sources */,
 				7F8D62CA203E59B400D92323 /* XCTestWDSessionController.swift in Sources */,
 				7F8D62CB203E59B400D92323 /* XCTestWDSourceController.swift in Sources */,
