@@ -20,7 +20,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		4D92A7E321295003000ED767 /* XCTestWDRemoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D92A7E221295003000ED767 /* XCTestWDRemoteController.swift */; };
 		4D2014CF215A057B005010B2 /* XCTAutomationSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D2014CE215A057B005010B2 /* XCTAutomationSupport.framework */; };
 		56215930209E98660043B404 /* XCTestWDScreenShotControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5621592F209E98660043B404 /* XCTestWDScreenShotControllerTest.swift */; };
 		56215932209E9A250043B404 /* XCTestWDSourceControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56215931209E9A250043B404 /* XCTestWDSourceControllerTests.swift */; };
