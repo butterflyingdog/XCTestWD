@@ -5,6 +5,7 @@
 	};
 	objectVersion = 45;
 	objects = {
+
 /* Begin PBXAggregateTarget section */
 		7F2B0207203C265F00B07F50 /* XCTestWDAggregation */ = {
 			isa = PBXAggregateTarget;
@@ -46,8 +47,14 @@
 		5663B8CC206F7F2A005C0CBA /* XCTestWD.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7F8D6297203E57CD00D92323 /* XCTestWD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5663B8CE206F7F61005C0CBA /* XCTestWD.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7F8D6297203E57CD00D92323 /* XCTestWD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5663B8D420707693005C0CBA /* XCTestWDUnitTestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5663B8D320707693005C0CBA /* XCTestWDUnitTestBase.swift */; };
+		56648266215F2A1500D867F0 /* XCTestWD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8D6297203E57CD00D92323 /* XCTestWD.framework */; };
 		56797FD92127CBA10066DDBD /* NSPredicate+XCTestWD.h in Headers */ = {isa = PBXBuildFile; fileRef = 56797FD72127CBA10066DDBD /* NSPredicate+XCTestWD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		56797FDA2127CBA10066DDBD /* NSPredicate+XCTestWD.m in Sources */ = {isa = PBXBuildFile; fileRef = 56797FD82127CBA10066DDBD /* NSPredicate+XCTestWD.m */; };
+		567BAE562164689C00E56ACB /* _XCTestCaseImplementation.h in Headers */ = {isa = PBXBuildFile; fileRef = 567BAE552164689C00E56ACB /* _XCTestCaseImplementation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		567BAE592164693B00E56ACB /* XCTestWDImplementationFailureHoldingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 567BAE572164693B00E56ACB /* XCTestWDImplementationFailureHoldingProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		567BAE5A2164693B00E56ACB /* XCTestWDImplementationFailureHoldingProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 567BAE582164693B00E56ACB /* XCTestWDImplementationFailureHoldingProxy.m */; };
+		567BAE5C21646BE900E56ACB /* XCTestWDFailureProofTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567BAE5B21646BE900E56ACB /* XCTestWDFailureProofTestCase.swift */; };
+		567BAE6021646C7800E56ACB /* XCTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 567BAE5F21646C7800E56ACB /* XCTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63D4083C1EAB62D500198736 /* Swifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D4083B1EAB62D500198736 /* Swifter.framework */; };
 		63D408671EAB62EB00198736 /* XCTestWDRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D408551EAB62EB00198736 /* XCTestWDRunner.swift */; };
 		7F36D5351EADC18300C83CF0 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4F31341EACECD900F8D82C /* SwiftyJSON.framework */; };
@@ -124,7 +131,7 @@
 			remoteGlobalIDString = 7F8D6296203E57CD00D92323;
 			remoteInfo = XCTestWD;
 		};
-		7FF25E002058D6380001C119 /* PBXContainerItemProxy */ = {
+		56648264215F28F100D867F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 63D4080F1EAB629400198736 /* Project object */;
 			proxyType = 1;
@@ -185,6 +192,11 @@
 		5663B8D320707693005C0CBA /* XCTestWDUnitTestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestWDUnitTestBase.swift; sourceTree = "<group>"; };
 		56797FD72127CBA10066DDBD /* NSPredicate+XCTestWD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSPredicate+XCTestWD.h"; sourceTree = "<group>"; };
 		56797FD82127CBA10066DDBD /* NSPredicate+XCTestWD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSPredicate+XCTestWD.m"; sourceTree = "<group>"; };
+		567BAE552164689C00E56ACB /* _XCTestCaseImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _XCTestCaseImplementation.h; sourceTree = "<group>"; };
+		567BAE572164693B00E56ACB /* XCTestWDImplementationFailureHoldingProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCTestWDImplementationFailureHoldingProxy.h; sourceTree = "<group>"; };
+		567BAE582164693B00E56ACB /* XCTestWDImplementationFailureHoldingProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCTestWDImplementationFailureHoldingProxy.m; sourceTree = "<group>"; };
+		567BAE5B21646BE900E56ACB /* XCTestWDFailureProofTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestWDFailureProofTestCase.swift; sourceTree = "<group>"; };
+		567BAE5F21646C7800E56ACB /* XCTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCTestCase.h; sourceTree = "<group>"; };
 		63D4082B1EAB629400198736 /* XCTestWDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCTestWDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D408311EAB629400198736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63D4083B1EAB62D500198736 /* Swifter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swifter.framework; path = ../Carthage/Build/iOS/Swifter.framework; sourceTree = "<group>"; };
@@ -271,6 +283,7 @@
 				7F36D5351EADC18300C83CF0 /* SwiftyJSON.framework in Frameworks */,
 				7FB002F01EAC66F900476E7A /* XCTest.framework in Frameworks */,
 				63D4083C1EAB62D500198736 /* Swifter.framework in Frameworks */,
+				56648266215F2A1500D867F0 /* XCTestWD.framework in Frameworks */,
 				7FE23795205E5CB60026CEFB /* CocoaLumberjack.framework in Frameworks */,
 				7FE23791205E583D0026CEFB /* CocoaLumberjackSwift.framework in Frameworks */,
 			);
@@ -382,6 +395,7 @@
 		7F8D62A3203E57E000D92323 /* Server */ = {
 			isa = PBXGroup;
 			children = (
+				567BAE5B21646BE900E56ACB /* XCTestWDFailureProofTestCase.swift */,
 				7F5D3602203C479D00BCC922 /* XCTestWDController.swift */,
 				7F5D3603203C479D00BCC922 /* XCTestWDDispatch.swift */,
 				7F5D3601203C479D00BCC922 /* XCTestWDServer.swift */,
@@ -394,6 +408,8 @@
 		7F8D62A4203E57E600D92323 /* PrivateHeaders */ = {
 			isa = PBXGroup;
 			children = (
+				567BAE5F21646C7800E56ACB /* XCTestCase.h */,
+				567BAE552164689C00E56ACB /* _XCTestCaseImplementation.h */,
 				7F5D35D5203C470800BCC922 /* CDStructures.h */,
 				7F5D35E2203C470900BCC922 /* XCAXClient_iOS.h */,
 				7F5D35E3203C470900BCC922 /* XCDebugLogDelegate-Protocol.h */,
@@ -426,6 +442,8 @@
 				7F5D35FC203C474900BCC922 /* XCTestWDApplication.m */,
 				56797FD72127CBA10066DDBD /* NSPredicate+XCTestWD.h */,
 				56797FD82127CBA10066DDBD /* NSPredicate+XCTestWD.m */,
+				567BAE572164693B00E56ACB /* XCTestWDImplementationFailureHoldingProxy.h */,
+				567BAE582164693B00E56ACB /* XCTestWDImplementationFailureHoldingProxy.m */,
 			);
 			path = Macaca;
 			sourceTree = "<group>";
@@ -487,6 +505,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				567BAE592164693B00E56ACB /* XCTestWDImplementationFailureHoldingProxy.h in Headers */,
+				567BAE562164689C00E56ACB /* _XCTestCaseImplementation.h in Headers */,
+				567BAE6021646C7800E56ACB /* XCTestCase.h in Headers */,
 				56797FD92127CBA10066DDBD /* NSPredicate+XCTestWD.h in Headers */,
 				7F8D629B203E57CD00D92323 /* XCTestWD.h in Headers */,
 				7F8D62B5203E596500D92323 /* XCTestPrivateSymbols.h in Headers */,
@@ -552,7 +573,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				7FF25E012058D6380001C119 /* PBXTargetDependency */,
+				56648265215F28F100D867F0 /* PBXTargetDependency */,
 			);
 			name = XCTestWDUITests;
 			productName = XCTestWDUITests;
@@ -699,6 +720,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F8D62BC203E59B400D92323 /* XCRuntimeUtils.m in Sources */,
+				567BAE5A2164693B00E56ACB /* XCTestWDImplementationFailureHoldingProxy.m in Sources */,
 				7F8D62BD203E59B400D92323 /* XCTestDaemonsProxy.m in Sources */,
 				7F8D62BE203E59B400D92323 /* XCTestPrivateSymbols.m in Sources */,
 				7F8D62BF203E59B400D92323 /* XCTestWDApplication.m in Sources */,
@@ -718,6 +740,7 @@
 				7F8D62D1203E59B400D92323 /* XCTestWDAlert.swift in Sources */,
 				7F8D62D2203E59B400D92323 /* XCTestWDErrors.swift in Sources */,
 				7F8D62D3203E59B400D92323 /* XCTestWDReponse.swift in Sources */,
+				567BAE5C21646BE900E56ACB /* XCTestWDFailureProofTestCase.swift in Sources */,
 				7F8D62D4203E59B400D92323 /* XCTestWDSession.swift in Sources */,
 				7F8D62D5203E59B400D92323 /* XCTestWDStatus.swift in Sources */,
 				7F8D62D6203E59B400D92323 /* XCUIElementTypeTransformer.swift in Sources */,
@@ -737,10 +760,10 @@
 			target = 7F8D6296203E57CD00D92323 /* XCTestWD */;
 			targetProxy = 5663B8BB206F79B9005C0CBA /* PBXContainerItemProxy */;
 		};
-		7FF25E012058D6380001C119 /* PBXTargetDependency */ = {
+		56648265215F28F100D867F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7F8D6296203E57CD00D92323 /* XCTestWD */;
-			targetProxy = 7FF25E002058D6380001C119 /* PBXContainerItemProxy */;
+			targetProxy = 56648264215F28F100D867F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -766,7 +789,10 @@
 				INFOPLIST_FILE = XCTestWDUnitTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "-lxml2";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-Wl,-U,\"_OBJC_CLASS_$_XCElementSnapshot\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Macaca.XCTestWDUnitTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
@@ -796,7 +822,10 @@
 				INFOPLIST_FILE = XCTestWDUnitTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "-lxml2";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-Wl,-U,\"_OBJC_CLASS_$_XCElementSnapshot\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Macaca.XCTestWDUnitTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
@@ -940,8 +969,11 @@
 				INFOPLIST_FILE = XCTestWDUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "-lxml2";
-				PRODUCT_BUNDLE_IDENTIFIER = XCTestWDRunner.XCTestWDRunner.xdfs-mac-pro.local;
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-Wl,-U,\"_OBJC_CLASS_$_XCElementSnapshot\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "XCTestWDRunner.XCTestWDRunner.Ali-71875N.local";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -975,8 +1007,11 @@
 				INFOPLIST_FILE = XCTestWDUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "-lxml2";
-				PRODUCT_BUNDLE_IDENTIFIER = XCTestWDRunner.XCTestWDRunner.xdfs-mac-pro.local;
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-Wl,-U,\"_OBJC_CLASS_$_XCElementSnapshot\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "XCTestWDRunner.XCTestWDRunner.Ali-71875N.local";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1043,7 +1078,10 @@
 				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				MACH_O_TYPE = mh_dylib;
-				OTHER_LDFLAGS = "-lxml2";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-Wl,-U,\"_OBJC_CLASS_$_XCElementSnapshot\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = XCTestWD.Test.XCTestWD;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1097,7 +1135,10 @@
 				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				MACH_O_TYPE = mh_dylib;
-				OTHER_LDFLAGS = "-lxml2";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-Wl,-U,\"_OBJC_CLASS_$_XCElementSnapshot\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = XCTestWD.Test.XCTestWD;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
