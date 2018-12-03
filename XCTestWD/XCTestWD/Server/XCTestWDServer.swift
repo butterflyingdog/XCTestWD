@@ -69,7 +69,7 @@ public class XCTestWDServer {
         controllers.append(XCTestWDElementController())
         controllers.append(XCTestWDWindowController())
         controllers.append(XCTestWDUrlController())
-        controllers.append(XCTestWDRemoteController())
+       // controllers.append(XCTestWDRemoteController())
         
         for controller in controllers {
             let routes = Swift.type(of: controller).routes()
