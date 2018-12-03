@@ -438,6 +438,7 @@ extension XCElementSnapshot {
     }
     
     func isHittable() -> Bool {
+        return true;
         //check whether self is the current hitelement
         let midPoint:CGPoint = ((self.suggestedHitpoints as! NSArray).lastObject as! NSValue).cgPointValue;
         if(midPoint.x == CGFloat.infinity || midPoint.y == CGFloat.infinity){
